@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 
-<html>
+<html lang = "en">
     <head>
 
         <meta charset="UTF-8">
 
-        <title>Home</title>
+        <title>covfefefefewgvsdfklhgdpfshnidfship</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         
@@ -148,14 +148,14 @@
                 border-radius:2%;
 
             }
-            #subSection{
+            .subSection{
                 background-color: rgba(190, 133, 48, 0.726);
                 width:87.5%;
                 transform: translate(7%, 30%);
                 margin-bottom:4%;
 
             }
-            #subSectionText{
+            .subSectionText{
                 text-indent:36px;
                 line-height: 1.6;
                 position:absolute;
@@ -165,7 +165,7 @@
 
                 font-size:140%;
             }
-            #subSectionTextBIG{
+            .subSectionTextBIG{
                 text-indent:36px;
                 line-height: 1.6;
                 position:absolute;
@@ -181,63 +181,64 @@
                 position:relative;
             }
             body{
-                background-color:rgb(31, 21, 15);
+                background-color:black;
 
             }
             
         </style>
     </head>
     <body>
-       <header>	
-                <ul style="display: table-cell; vertical-align: middle;">
-                    <li class = "button"><a href="index.html">Home</a></li>
-                    <li class = "button"><a href="about.html" id="SUS"><span>About Us</span></a></li>
-                    <li id = "Title">CoFii</li>
-                    <li class = "button"><a href="menu.html">Order</a></li>
-                    <li class = "button"><a href="#">Soon</a></li>
-                </ul>
+        <header>	
+            <ul style="display: table-cell; vertical-align: middle;">
+                <li class = "button"><a href="#">Home</a></li>
+                <li class = "button"><a href="#" id="SUS"><span>About Us</span></a></li>
+                <li id = "Title">CoFii</li>
+                <li class = "button"><a href="#">Order</a></li>
+                <li class = "button"><a href="#">Contact Us</a></li>
+            </ul>
+
         </header>
         
         <div class="mainContent">
             <div id="BGCOLORBANNER">
 
-                <img src = "CoffeeBanner.png" width="100%" id = "backgroundIMG">
+                <img src = "CoffeeBanner.png" style="width:100%" id = "backgroundIMG" alt="Coffee Banner">
 
-                <img src = "CofiiLogo.png" width="11%" id = "CofiiLogo">
+                <img src = "CofiiLogo.png" style="width:11%" id = "CofiiLogo" alt = " Logo">
 
                 <section>
                     <h2>Home</h2>
 
-                    <div id="subSection">
-                        <video width="800" autoplay muted loop id="vid1" >
+                    <div class="subSection">
+                        <video style="width:800px" autoplay muted loop >
                             <source src="MochaCroissant.mp4" type="video/mp4">
                         </video>
-                        <p id="subSectionTextBIG"> <strong>Featured meal of the day: MochaCroissant;</strong>
+                        <p class="subSectionTextBIG"> <strong>Featured meal of the day: MochaCroissant;</strong>
                                                 
                         </p>
-                        <p id="subSectionText"> yum yum delicius, it is quite literally croissant with coffee. BUT ACTUALLY
+                        <p class="subSectionText"> yum yum delicius, it is quite literally croissant with coffee. BUT ACTUALLY
                             THATS NOT ALL, THE CROISSANT IS BUTTERED!!!!!! filler text to make the website look big and informative.
                             anyhow would recommend very tasty.
                                                 
                         </p>
                     </div>
-                    <div id="subSection">
-                        <video width="800" autoplay muted loop id="vid1" >
+                    <div class="subSection">
+                        <video style="width:800px" autoplay muted loop  >
                             <source src="CoffeeCream.mp4" type="video/mp4">
                         </video>
-                        <p id="subSectionTextBIG"> <strong>Ordering custom Coffee now available;</strong>
+                        <p class="subSectionTextBIG"> <strong>Ordering custom Coffee now available;</strong>
                                                 
                         </p>
-                        <p id="subSectionText"> Customized sugar, caffeine, milk, and other things
+                        <p class="subSectionText"> Customized sugar, caffeine, milk, and other things
                             If you want an entire cup of whipped cream, kinda weird but that works too i guess?
                             If you also want some designs on your coffee you could ask that too.
                
                         </p>
                     </div>
 
-                    <div id="subSection" width = "0">
-                        <img src="coffeeGuide.jpg" width="50%" >
-                        <p id="subSectionText" style =margin-top:-48%;"> If you ever feel lost on what to order, here is a Coffee Guide for all your Coffee needs!</p>
+                    <div class="subSection" >
+                        <img src="coffeeGuide.jpg" style="width:50%" alt = "Guide to Coffee">
+
                     </div>
                 </section>
             </div>
