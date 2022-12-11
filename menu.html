@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+
         <title>covfefefefewgvsdfklhgdpfshnidfship</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,22 +18,14 @@
             }
             
         
-            header{
-                background-color:rgb(0, 0, 0);
-                font-family: 'Dancing Script', cursive;
-                color:white;
-                font-size:500%;
-                text-align:center;	
-                vertical-align: middle;
-                height:130px;
-            }
+
             section {
                 background-color:rgba(255, 242, 217, 0.795);
-                height:315%;
+                height:300%;
                 width:96%;
                 z-index: 1;
                 position: absolute;
-                top: 185%;
+                top: 175%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 border:1px solid rgba(255, 255, 255, 0);    
@@ -52,7 +46,7 @@
                 border:1px solid purple;
                 color: white;
                 width:100%;
-                height:22px;
+
                 padding-top:8px;
                 text-align: center;
                 position:fixed;
@@ -73,23 +67,50 @@
                 text-decoration: underline;
             }
             
-            table{
-                width:100%;
-            }
-            tr{
+            header{
+                background-color:rgb(0, 0, 0);
+                font-family: 'Dancing Script', cursive;
+                color:white;
+                font-size:500%;
+                text-align:center;	
                 vertical-align: middle;
+                height:130px;
             }
-            li {
-                display: inline;
-                padding: 2%;
+            header ul {
+                width: 1440px;
+                list-style-type: none;
+                padding: 0;
+                overflow: hidden;
+                margin-left:auto;
+                margin-right:auto;
+                padding-top:28px;
+                padding-left:32%;
+                margin-bottom:0px;
+            }
+            header ul li {
+                float: left;
+                height: 97px;
+                padding-left: 2.5%;
+                padding-right:2.5%;
+
                 font-family: 'Open Sans', sans-serif;
-                padding-top:100px;
-                padding-bottom:100px;
-
             }
-            p{
-                display: inline;
+            header ul li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 22pt;
+            }
 
+            #Title {
+                font-family: 'Dancing Script', cursive;
+                display: block;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                font-size: 100%;
             }
             .button:hover {
                 background-color:purple;
@@ -112,10 +133,7 @@
                 height:5000%;
 
             }
-            #Title {
-                padding: 4%;
-                padding-bottom:4%;
-            }
+
             #CofiiLogo{
                 z-index: 1;
                 position: absolute;
@@ -128,30 +146,28 @@
             }
 
 
-            #subSection{
+            .subSection{
                 background-color: rgba(190, 133, 48, 0.726);
                 width:87.5%;
                 transform: translate(7%, 30%);
-                margin-top:5%;
+                margin-bottom:4%;
             }
-            #subSectionText{
-                text-indent:36px;
+            .subSectionText{
                 line-height: 1.6;
                 position:absolute;
-                margin-top:100px;
-                margin-left:36px;
+                margin-top:-8%;
+                margin-left:22%;
                 margin-right:36px;
-
                 font-size:140%;
             }
-            #subSectionTextBIG{
+            .subSectionTextBIG{
                 text-indent:36px;
                 line-height: 1.6;
                 position:absolute;
-                margin-top:48px;
-                margin-left:36px;
+                margin-top:-12%;
+                margin-left:16%;
                 margin-right:36px;
-
+                z-index: 200;
                 font-size:200%;
             }
 
@@ -168,112 +184,87 @@
     </head>
     <body>
         <header>	
-            <table style="display: table; overflow: hidden;">			
-                    <tr style="display: table-cell; vertical-align: middle;">
-                        <li class = "button"><a href="#">Home</a></li>
-                        <li class = "button"><a href="#" id="SUS"><span>About Us</span></a></li>
-                        <p id = "Title">CoFii</p>
-                        <li class = "button"><a href="#">Order</a></li>
-                        <li class = "button"><a href="#">Contact Us</a></li>
-                </tr>
-            </table>			
+                <ul style="display: table-cell; vertical-align: middle;">
+                    <li class = "button"><a href="#">Home</a></li>
+                    <li class = "button"><a href="#" id="SUS"><span>About Us</span></a></li>
+                    <li id = "Title">CoFii</li>
+                    <li class = "button"><a href="#">Order</a></li>
+                    <li class = "button"><a href="#">Contact Us</a></li>
+                </ul>
 
         </header>
         
         <div class="mainContent">
             <div id="BGCOLORBANNER">
 
-                <img src = "CoffeeBanner.png" width="100%" id = "backgroundIMG">
+                <img src = "CoffeeBanner.png" style="width:100%" id = "backgroundIMG" alt="Coffee Banner">
 
-                <img src = "CofiiLogo.png" width="11%" id = "CofiiLogo">
+                <img src = "CofiiLogo.png" style="width:11%" id = "CofiiLogo" alt ="CoffiiLogo">
 
                 <section>
                     <h2>Coffees</h2>
-                    <div id="subSection">
-                        <video width="800" autoplay muted loop id="vid1" >
-                            <source src="MochaCroissant.mp4" type="video/mp4">
-                        </video>
-                        <p id="subSectionTextBIG"> <strong>Featured meal of the day: MochaCroissant;</strong>
-                                                
-                        </p>
-                        <p id="subSectionText"> yum yum delicius, it is quite literally croissant with coffee. BUT ACTUALLY
-                            THATS NOT ALL, THE CROISSANT IS BUTTERED!!!!!! filler text to make the website look big and informative.
-                            anyhow would recommend very tasty.
-                                                
+                    <div class="subSection">
+                        <img src="Americano.jfif" style="height: 200px" alt = "Americano">
+                        <p class="subSectionTextBIG"> <strong>Americano</strong>    </p>
+                        <p class="subSectionText"> Price:  <br> &nbsp;&nbsp;Large: ₱120  <br> &nbsp;&nbsp;Small: ₱90
                         </p>
                     </div>
-                    <div id="subSection">
-                        <video width="800" autoplay muted loop id="vid1" >
-                            <source src="CoffeeCream.mp4" type="video/mp4">
-                        </video>
-                        <p id="subSectionTextBIG"> <strong>Ordering custom Coffee now available;</strong>
-                                                
-                        </p>
-                        <p id="subSectionText"> Customized sugar, caffeine, milk, and other things
-                            If you want an entire cup of whipped cream, kinda weird but that works too i guess?
-                            If you also want some designs on your coffee you could ask that too.
-                                
-                                                
+                    <div class="subSection">
+                        <img src="Cappuccino.jpg" style="height: 200px" alt = "Cappuccino">
+                        <p class="subSectionTextBIG"> <strong>Cappuccino</strong>    </p>
+                        <p class="subSectionText"> Price:  <br> &nbsp;&nbsp;Large: ₱110  <br> &nbsp;&nbsp;Small: ₱80
                         </p>
                     </div>
 
-                    <div id="subSection">
-                        <video width="800" autoplay muted loop id="vid1" >
-                            <source src="CoffeeCream.mp4" type="video/mp4">
-                        </video>
-                        <p id="subSectionTextBIG"> <strong>Ordering custom Coffee now available;</strong>
-                                                
+                    <div class="subSection">
+                        <img src="Espresso.jpg" style="height: 200px" alt = "Espresso">
+                        <p class="subSectionTextBIG"> <strong>Espresso</strong>    </p>
+                        <p class="subSectionText"> Price:  <br> &nbsp;&nbsp;Large: ₱120  <br> &nbsp;&nbsp;Small: ₱90
                         </p>
-                        <p id="subSectionText"> Customized sugar, caffeine, milk, and other things
-                            If you want an entire cup of whipped cream, kinda weird but that works too i guess?
-                            If you also want some designs on your coffee you could ask that too.
-                                
-                                                
+                    </div>
+                    <div class="subSection">
+                        <img src="Latte.jpg"  style="height: 200px" alt = "Latte">
+                        <p class="subSectionTextBIG"> <strong>Latte</strong>    </p>
+                        <p class="subSectionText"> Price:  <br> &nbsp;&nbsp;Large: ₱110  <br> &nbsp;&nbsp;Small: ₱980
+                        </p>
+                    </div>
+                    <div class="subSection">
+                        <img src="Mocha.png"  style="height: 200px" alt="Mocha">
+                        <p class="subSectionTextBIG"> <strong>Mocha</strong>    </p>
+                        <p class="subSectionText"> Price:  <br> &nbsp;&nbsp;Large: ₱130  <br> &nbsp;&nbsp;Small: ₱100
                         </p>
                     </div>
 
-                    <div id="subSection">
-                        <video width="800" autoplay muted loop id="vid1" >
-                            <source src="CoffeeCream.mp4" type="video/mp4">
-                        </video>
-                        <p id="subSectionTextBIG"> <strong>Ordering custom Coffee now available;</strong>
-                                                
-                        </p>
-                        <p id="subSectionText"> Customized sugar, caffeine, milk, and other things
-                            If you want an entire cup of whipped cream, kinda weird but that works too i guess?
-                            If you also want some designs on your coffee you could ask that too.
-                                
-                                                
+                    <h2>Meals</h2>
+
+                    <div class="subSection">
+                        <img src="Croissant.jfif"  style="height: 200px" alt ="Croissant">
+                        <p class="subSectionTextBIG"> <strong>Croissant</strong>    </p>
+                        <p class="subSectionText"> Price: ₱100
                         </p>
                     </div>
-
-                    <div id="subSection">
-                        <video width="800" autoplay muted loop id="vid1" >
-                            <source src="CoffeeCream.mp4" type="video/mp4">
-                        </video>
-                        <p id="subSectionTextBIG"> <strong>Ordering custom Coffee now available;</strong>
-                                                
-                        </p>
-                        <p id="subSectionText"> Customized sugar, caffeine, milk, and other things
-                            If you want an entire cup of whipped cream, kinda weird but that works too i guess?
-                            If you also want some designs on your coffee you could ask that too.
-                                
-                                                
+                    <div class="subSection">
+                        <img src="PizzaBagel.jfif"  style="height: 200px" alt = "PizzaBagel">
+                        <p class="subSectionTextBIG"> <strong>Pizza Bagel</strong>    </p>
+                        <p class="subSectionText"> Price: ₱130
                         </p>
                     </div>
-
-                    <div id="subSection">
-                        <video width="800" autoplay muted loop id="vid1" >
-                            <source src="CoffeeCream.mp4" type="video/mp4">
-                        </video>
-                        <p id="subSectionTextBIG"> <strong>Ordering custom Coffee now available;</strong>
-                                                
+                    <div class="subSection">
+                        <img src="GrilledCheese.jpg"  style="height: 200px" alt = "GrilledCheese">
+                        <p class="subSectionTextBIG"> <strong>Grilled Cheese</strong>    </p>
+                        <p class="subSectionText"> Price: ₱150
                         </p>
-                        <p id="subSectionText"> Customized sugar, caffeine, milk, and other things
-                            If you want an entire cup of whipped cream, kinda weird but that works too i guess?
-                            If you also want some designs on your coffee you could ask that too.
-                                
-                                                
+                    </div>
+                    <div class="subSection">
+                        <img src="S'mores.jpg"  style="height: 200px" alt = "S'mores">
+                        <p class="subSectionTextBIG"> <strong>S'mores</strong>    </p>
+                        <p class="subSectionText"> Price: ₱130
+                        </p>
+                    </div>
+                    <div class="subSection">
+                        <img src="Pancakes.jpg"  style="height: 200px" alt = "Pancakes">
+                        <p class="subSectionTextBIG"> <strong>Pancakes</strong>    </p>
+                        <p class="subSectionText"> Price: ₱90
                         </p>
                     </div>
                 </section>
